@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../global/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../global/css/global.css">
+    <link rel="stylesheet" href="../../global/css/style.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css">
+    <title>Lập trình web</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="row"></div>
+        <div class="container">
+            <div class="header-left">
+                <a href="index.html"><img src="assets/images/logo_ptit.png" class="inner-logo" alt=""></a>
+                <div class="inner-menu">
+                    <ul>
+                        <li>
+                            <a onclick="showPractice()">Luyện tập</a>
+                        </li>
+                        <li>
+                            <a onclick="showMidtermExam()">Kiểm tra giữa kỳ</a>
+                        </li>
+                        <li>
+                            <a onclick="showFinalExam()">Kiểm tra cuối kỳ</a>
+                        </li>
+                        <li>
+                            <a href="#">Kết quả</a>
+                        </li>
+                        <li>
+                            <a href="#">Bảng xếp hạng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-right">
+                <img src="assets/images/avt.png" alt="">
+                <div class="dropdown">
+                    <div class="dropbtn"><i class="fa-solid fa-caret-down"></i></div>
+                    <div class="dropdown-content">
+                        <a href="#">Hồ Sơ</a>
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER -->
+
+    <!-- GUIDANCE -->
+    <div class="guidance">
+        <div class="container">
+            <div class="row">
+                <div class="guidance-left col-7">
+                    <h2 class="inner-title">Quy định làm bài</h2>
+                    <ul>
+                        <li class="inner-content">Môn: Lập trình web</li>
+                        <li class="inner-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                            enim eveniet pariatur iusto delectus non eaque nulla, accusamus quibusdam hic dicta. Cum
+                            deleniti nihil qui, temporibus ab odio sit molestiae!</li>
+                        <li class="inner-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                            enim eveniet pariatur iusto delectus non eaque nulla, accusamus quibusdam hic dicta. Cum
+                            deleniti nihil qui, temporibus ab odio sit molestiae!</li>
+                    </ul>
+                </div>
+                <div class="guidance-right col-5">
+                    <img src="assets/images/15-Best-Open-Source-Test-Management-Tools-in-2023.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GUIDANCE -->
+
+    <!-- NAV-TITLE -->
+    <div class="ques-nav" id="ques-nav">
+        <div class="container">
+            <div class="inner-ques-nav">
+                <div class="ques-nav-top">
+                    <span class="ques-nav-title">Bài tập</span>
+                    <form action class="ques-nav-form">
+                        <input type="text" name="s" id placeholder="Tìm theo mã, tiêu đề">
+                        <input type="submit" value="/">
+                    </form>
+                </div>
+                <div class="ques-nav-wrapper">
+                    <table class="ques-table">
+                        <thead>
+                            <tr class="ques-table-head">
+                                <!-- <th></th> -->
+                                <th class="text">STT</th>
+                                <th class="text"><a href="#"></a>Mã</th>
+                                <th class="text"><a href="#"></a>Tiêu đề</th>
+                                <th class="text">Thời gian</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ques-nav" id="ques-nav-GK" style="display: none;">
+        <div class="container">
+            <div class="inner-ques-nav">
+                <div class="ques-nav-top">
+                    <span class="ques-nav-title">Kiểm tra giữa kỳ</span>
+                    <form action class="ques-nav-form">
+                        <input type="text" name="s" id placeholder="Tìm theo mã, tiêu đề">
+                        <input type="submit" value="/">
+                    </form>
+                </div>
+                <div class="ques-nav-wrapper">
+                    <table class="ques-table">
+                        <thead>
+                            <tr class="ques-table-head">
+                                <!-- <th></th> -->
+                                <th class="text">STT</th>
+                                <th class="text"><a href="#"></a>Mã</th>
+                                <th class="text"><a href="#"></a>Tiêu đề</th>
+                                <th class="text">Thời gian</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ques-nav" id="ques-nav-CK" style="display: none;">
+        <div class="container">
+            <div class="inner-ques-nav">
+                <div class="ques-nav-top">
+                    <span class="ques-nav-title">Kiểm tra cuối kỳ</span>
+                    <form action class="ques-nav-form">
+                        <input type="text" name="s" id placeholder="Tìm theo mã, tiêu đề">
+                        <input type="submit" value="/">
+                    </form>
+                </div>
+                <div class="ques-nav-wrapper">
+                    <table class="ques-table">
+                        <thead>
+                            <tr class="ques-table-head">
+                                <!-- <th></th> -->
+                                <th class="text">STT</th>
+                                <th class="text"><a href="#"></a>Mã</th>
+                                <th class="text"><a href="#"></a>Tiêu đề</th>
+                                <th class="text">Thời gian</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- NAV-TITLE -->
+    <script src="../../global/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../global/bootstrap/jquery.slim.min.js"></script>
+    <script src="../../global/js/function.js"></script>
+</body>
+
+</html>

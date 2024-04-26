@@ -1,0 +1,117 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-container {
+  background-color: white
+}
+
+.circle-container {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.semicircle {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: right center;
+}
+
+.semicircle:nth-child(1) {
+  background-color: #088b8b;
+  z-index: 2;
+}
+.semicircle:nth-child(2) {
+  background-color: #088b8b;
+  z-index: 3;
+}
+.semicircle:nth-child(3) {
+  background-color: #ddd;
+  z-index: 4;
+  /* display: none; */
+}
+.outermost-circle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  z-index: 5;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  /* display: none; */
+}
+
+/* .clock-container:hover .semicircle:nth-child(1) {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+  -moz-transition: 1s linear;
+  -ms-transition: 1s linear;
+  -o-transition: 1s linear;
+}
+.clock-container:hover .semicircle:nth-child(2) {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transition: 2s linear;
+  -webkit-transition: 2s linear;
+  -moz-transition: 2s linear;
+  -ms-transition: 2s linear;
+  -o-transition: 2s linear;
+}
+.clock-container:hover .semicircle:nth-child(3) {
+  opacity: 0;
+  transition: opacity 0s 1s;
+  -webkit-transition: opacity 0s 1s;
+  -moz-transition: opacity 0s 1s;
+  -ms-transition: opacity 0s 1s;
+  -o-transition: opacity 0s 1s;
+} */
+
+
+.timer-container {
+  width: 50px;
+  height: 50px;
+  z-index: 6;
+}
+.timer {
+  width: 20px;
+  height: 20px;
+  z-index: 7;
+  padding-left: 80px;
+}
+.timer div {
+  font-size: 24px;
+  font-weight: 200;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px 0 5px;
+}
+.timer .colon {
+  background-color: transparent;
+  width: 5px;
+  margin-left: 0;
+  margin-right: 0px;
+  /* padding-bottom: 10px; */
+}
